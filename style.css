@@ -1,0 +1,54 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}    
+.btn{
+    padding: 15px 22px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.6s ease;
+    margin: 20px;
+    width: 180px;
+    display: block;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+.btn:active{
+    transition: 0.2s;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item{
+    height: 460px;
+    width: 320px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.grey{
+    background-color: rgb(241, 234, 234);
+}
+
+@media(max-width:750px) and (min-width:0px)
+{
+    .item{
+        width: 750px;
+        height: 470px;
+    }
+   .container{
+       justify-content: space-between;
+   }
+   .btn{
+       display: inline-block;
+       margin: 10px;
+   }
+}
